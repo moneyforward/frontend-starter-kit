@@ -33,7 +33,7 @@
     "iron-session": "^8.0.1",
     "lodash": "^4.17.21",
     "msw": "^2.2.10",
-    "next": "^14.1.0",
+    "next": "^14.1.1",
     "next-i18n-router": "^5.0.2",
     "next-runtime-env": "^3.2.0",
     "npm": "^10.2.5",
