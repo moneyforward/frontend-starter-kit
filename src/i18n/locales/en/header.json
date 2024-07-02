@@ -1,0 +1,43 @@
+{
+  "externalTool": "External tool",
+  "guidePage": "To guide page",
+  "inquiry": "Inquiry",
+  "logout": "Logout",
+  "mfcServices": {
+    "accounting": "Accounting",
+    "accountingPlus": "Accounting Plus",
+    "assetAccounting": "Asset Account",
+    "attendance": "Attendance",
+    "box": "Box",
+    "consolidatedAccounting": "Consolidated Accounting",
+    "employee": "Employee",
+    "expense": "Expense",
+    "invoice": "Invoice",
+    "myNumber": "My Number",
+    "payForBusiness": "Pay for Business",
+    "payable": "Payable",
+    "payableInvoice": "INVOICE (Receive)",
+    "payableManagement": "債権管理",
+    "payroll": "Payroll",
+    "prefix": "Cloud ",
+    "projectCode": "Project Code",
+    "receivable": "Receivable",
+    "sendCloudInvoice": "INVOICE (Send)",
+    "socialInsurance": "Social Insurance",
+    "stampless": "Stampless",
+    "taxAdjustment": "Tax Adjustment",
+    "taxReturn": "Tax Return"
+  },
+  "mfcServicesHeading": {
+    "accounting": "Accounting",
+    "hr": "HR",
+    "others": "Others"
+  },
+  "noNotification": "There is no notification",
+  "privacy": "Privacy policy",
+  "supportPage": "To support page",
+  "tenantSettings": "Tenant Settings",
+  "tenantUid": "Tenant UID",
+  "term": "Term of use",
+  "userSetting": "User Settings"
+}

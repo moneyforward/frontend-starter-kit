@@ -1,0 +1,57 @@
+{
+  "actions": {
+    "add": "追加",
+    "addRow": "行追加",
+    "applyWithDetails": "この内容で申込",
+    "approve": "承認",
+    "back": "戻る",
+    "bulkDelete": "選択した項目を削除",
+    "bulkDuplicate": "選択した項目を複製",
+    "bulkSubmit": "送金申請",
+    "cancel": "キャンセル",
+    "cancelEdit": "破棄",
+    "close": "閉じる",
+    "confirm": "確認画面へ",
+    "create": "新規作成",
+    "delete": "削除",
+    "deselectAll": "選択を解除",
+    "details": "詳細",
+    "duplicate": "複製",
+    "edit": "編集",
+    "editAgain": "修正",
+    "next": "次へ",
+    "ok": "OK",
+    "previous": "前へ",
+    "reject": "差戻し",
+    "save": "保存",
+    "saveDraft": "下書き保存",
+    "search": "検索",
+    "selectAll": "すべて選択",
+    "submit": "申請",
+    "switch": "選択",
+    "withdraw": "申請取消"
+  },
+  "dateFormat": {
+    "monthYear": "YYYY[年]MM[月]"
+  },
+  "emptyData": "データがありません",
+  "message": {
+    "incorrectOperation": "不適切な操作です",
+    "noData": "データなし",
+    "noPermission": "権限がありません",
+    "saveError": "保存に失敗しました。時間をおいて、再度お試しください。",
+    "saveSuccess": "保存しました",
+    "somethingWentWrong": "エラーが発生しました"
+  },
+  "pagination": {
+    "items": "件",
+    "page": "ページ"
+  },
+  "validations": {
+    "invalid": "不正な値です",
+    "invalidUrl": "URLは不正な値です",
+    "max": "半角{{ max }}文字以内で入力してください",
+    "pastTime": "公開日時は現在時刻以降にしてください",
+    "required": "必須項目です"
+  }
+}

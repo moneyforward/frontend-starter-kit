@@ -1,0 +1,52 @@
+{
+  "actions": {
+    "add": "Add",
+    "addRow": "Add Row",
+    "applyWithDetails": "Apply With These Details",
+    "approve": "Approve",
+    "back": "Back",
+    "bulkDelete": "Bulk Delete",
+    "bulkDuplicate": "Bulk Duplicate",
+    "bulkSubmit": "Bulk Submit",
+    "cancel": "Cancel",
+    "cancelEdit": "Cancel Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "create": "Create",
+    "delete": "Delete",
+    "deselectAll": "Deselect All",
+    "details": "Details",
+    "duplicate": "Duplicate",
+    "edit": "Edit",
+    "editAgain": "Edit Again",
+    "next": "Next",
+    "ok": "OK",
+    "previous": "Previous",
+    "reject": "Reject",
+    "save": "Save",
+    "saveDraft": "Save Draft",
+    "search": "Search",
+    "selectAll": "Select All",
+    "submit": "Submit",
+    "switch": "Switch",
+    "withdraw": "Withdraw"
+  },
+  "dateFormat": {
+    "monthYear": "YYYY/MM"
+  },
+  "message": {
+    "incorrectOperation": "Incorrect Operation",
+    "noData": "no data",
+    "noPermission": "You don't have permission",
+    "saveError": "Failed to save. Please wait a moment and try again.",
+    "saveSuccess": "Saved Successfully",
+    "somethingWentWrong": "Something went wrong"
+  },
+  "pagination": {
+    "items": " items",
+    "page": "page"
+  },
+  "validations": {
+    "required": "This is required field"
+  }
+}

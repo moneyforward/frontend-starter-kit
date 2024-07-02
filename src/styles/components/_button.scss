@@ -1,0 +1,123 @@
+@mixin outline_button_mixins($outline_color) {
+  border-color: $outline_color;
+  color: $outline_color;
+}
+
+@mixin button_mixins($color) {
+  background-color: $color;
+  color: $button-text-color;
+  border-color: $color;
+
+  &:hover {
+    color: $button-text-color;
+  }
+}
+
+.button-groups {
+  button {
+    margin-left: 8px;
+
+    &:first-of-type {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.ant-btn.app-button:not(.ant-btn-icon-only) {
+  min-width: 72px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 4px;
+  line-height: 14px;
+
+  &.x-large {
+    min-width: 120px;
+    height: 48px;
+  }
+
+  &.large {
+    min-width: 88px;
+    height: 40px;
+  }
+
+  &.small {
+    min-width: 48px;
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  &.auto {
+    min-width: unset;
+  }
+
+  &.ant-btn-link {
+    height: auto;
+    padding: 0;
+    color: $blue;
+    line-height: initial;
+
+    &.ant-btn-dangerous {
+      color: $danger-color;
+    }
+
+    &:disabled {
+      color: $button-disabled-text-color;
+    }
+  }
+
+  &:not(&.ant-btn-link) {
+    &:disabled {
+      border: none;
+      background: $button-disabled-bg-color;
+      color: $button-disabled-text-color;
+    }
+
+    &:not(:disabled) {
+      color: $button-text-color;
+
+      &.primary {
+        @include button_mixins($primary-color);
+        &:focus {
+          box-shadow: 0px 0px 0px 2px rgba(59, 125, 233, 0.2);
+        }
+      }
+
+      &.error {
+        @include button_mixins($error-color);
+
+        &:focus {
+          box-shadow: 0px 0px 0px 2px rgba(208, 2, 27, 0.2);
+        }
+      }
+
+      &.outline {
+        background-color: $button-outline-bg-color;
+
+        &.primary {
+          @include outline_button_mixins($primary-color);
+        }
+
+        &.error {
+          @include outline_button_mixins($error-color);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.ant-btn.ant-btn-icon-only:not(.ant-input-search-button) {
+  width: auto;
+  height: auto;
+  border: 0;
+  line-height: 0;
+
+  > span {
+    vertical-align: middle;
+    transform: scale(1);
+  }
+}

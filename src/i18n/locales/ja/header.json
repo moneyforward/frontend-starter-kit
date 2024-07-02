@@ -1,0 +1,43 @@
+{
+  "externalTool": "外部送信ツールに関する公表事項",
+  "guidePage": "このページのガイド",
+  "inquiry": "お問い合わせ",
+  "logout": "ログアウト",
+  "mfcServices": {
+    "accounting": "会計",
+    "accountingPlus": "会計Plus",
+    "assetAccounting": "固定資産",
+    "attendance": "勤怠",
+    "box": "Box",
+    "consolidatedAccounting": "連結会計",
+    "employee": "人事管理",
+    "expense": "経費",
+    "invoice": "請求書",
+    "myNumber": "マイナンバー",
+    "payForBusiness": "Pay for Business",
+    "payable": "債務支払",
+    "payableInvoice": "インボイス [受領]",
+    "payableManagement": "債権管理",
+    "payroll": "給与",
+    "prefix": "クラウド",
+    "projectCode": "個別原価",
+    "receivable": "請求書Plus",
+    "sendCloudInvoice": "インボイス [送付]",
+    "socialInsurance": "社会保険",
+    "stampless": "契約",
+    "taxAdjustment": "年末調整",
+    "taxReturn": "確定申告"
+  },
+  "mfcServicesHeading": {
+    "accounting": "経理",
+    "hr": "人事労務",
+    "others": "その他"
+  },
+  "noNotification": "お知らせはありません",
+  "privacy": "個人情報保護方針",
+  "supportPage": "サポートサイト",
+  "tenantSettings": "事業者設定",
+  "tenantUid": "事業者番号",
+  "term": "利用規約",
+  "userSetting": "ユーザー設定"
+}
