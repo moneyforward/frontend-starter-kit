@@ -18,7 +18,7 @@ const UserDropdown = () => {
     return (
       <HeaderDropdownPopup menu={menu}>
         <div className="header-dropdown-info">
-          <div className="name">{username}</div>
+          <p className="name">{username}</p>
         </div>
       </HeaderDropdownPopup>
     )

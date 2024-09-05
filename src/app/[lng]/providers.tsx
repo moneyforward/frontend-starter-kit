@@ -33,6 +33,59 @@ export const AntdConfigProvider = ({ children }: React.PropsWithChildren) => {
       renderEmpty={() => <Empty description={t('message.noData')} />}
       table={{ className: 'app-table' }}
       getPopupContainer={defaultGetPopupContainer}
+      theme={{
+        token: {
+          fontSize: 16,
+          colorPrimary: '#3b7de9',
+          colorInfo: '#3b7de9',
+          colorError: '#ec4949',
+          borderRadius: 4
+        },
+        components: {
+          Typography: {
+            fontSize: 13
+          },
+          Button: {
+            colorBorder: 'rgb(59, 125, 233)',
+            colorText: 'rgb(59, 125, 233)',
+            contentFontSizeSM: 13,
+            contentLineHeightSM: 1,
+            paddingInlineSM: 8,
+            paddingBlockSM: 2,
+            contentFontSize: 13,
+            contentLineHeight: 1,
+            paddingInline: 8,
+            paddingBlock: 6
+          },
+          Table: {
+            headerBg: 'rgb(241, 241, 241)',
+            borderColor: 'rgb(226, 226, 226)',
+            padding: 8,
+            fontSize: 13,
+            borderRadius: 0,
+            headerBorderRadius: 0,
+            fontWeightStrong: 400,
+            rowHoverBg: 'rgb(235, 241, 251)',
+            rowSelectedBg: 'rgb(203, 230, 255)',
+            rowSelectedHoverBg: 'rgb(203, 230, 255)'
+          },
+          Checkbox: {
+            colorBgContainerDisabled: 'rgb(145, 145, 145)',
+            colorBorder: 'rgb(145, 145, 145)',
+            colorPrimary: 'rgb(59, 125, 233)',
+            colorPrimaryBorder: 'rgb(59, 125, 233)',
+            colorTextDisabled: 'rgb(145, 145, 145)',
+            colorText: 'rgb(48, 48, 48)',
+            borderRadiusSM: 2,
+            controlInteractiveSize: 18,
+            lineWidth: 2
+          },
+          Input: {
+            colorBgContainerDisabled: '#F1F1F1',
+            colorTextDisabled: '#919191'
+          }
+        }
+      }}
     >
       {children}
     </ConfigProvider>

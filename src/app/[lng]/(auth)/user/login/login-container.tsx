@@ -17,10 +17,10 @@ export default function LoginContainer() {
 
   return (
     <div className="flex flex-col m-4">
-      <h2 className="text-lg font-semibold">{t('heading')}</h2>
+      <h1>{t('heading')}</h1>
       <p>{t('desc')}</p>
 
-      <div className="flex gap-2 mt-4">
+      <div className="mt-4">
         <Button type="primary" onClick={handleLogin}>
           {t('login')}
         </Button>

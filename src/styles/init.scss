@@ -4,8 +4,15 @@
 
 @import './globals';
 @import './variables';
+@import './base';
 
-@import './components/button';
-
+@import './layout/app-layout';
 @import './layout/header';
 @import './layout/sider';
+
+@import './components/button';
+@import './components/card';
+@import './components/checkbox';
+@import './components/typography';
+
+@import './pages/tenant';

@@ -1,5 +1,4 @@
 {
-  "tenant": "事業者",
-  "tenantUser": "ユーザー",
-  "transferData": "送金データ"
+  "settings": "設定",
+  "users": "ユーザー"
 }
