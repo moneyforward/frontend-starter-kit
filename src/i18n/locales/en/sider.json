@@ -1,5 +1,4 @@
 {
-  "tenant": "Tenant",
-  "tenantUser": "Tenant User",
-  "transferData": "Transfer Data"
+  "settings": "Settings",
+  "users": "Users"
 }

@@ -2,7 +2,7 @@
 
 import { Button, Dropdown } from 'antd'
 import Link from 'next/link'
-import { ReactNode } from 'react'
+import { ReactNode, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { ChevronDownIcon } from '../icons'
@@ -19,11 +19,15 @@ const TenantDropdown = () => {
     return (
       <HeaderDropdownPopup menu={menu}>
         <div className="header-dropdown-info">
-          <div className="name">{tenantName}</div>
-          <div className="tenant-uid">{`${t('tenantUid')}: ${tenantUid}`}</div>
+          <p className="name">{tenantName}</p>
+          <p className="tenant-uid">{`${t('tenantUid')}: ${tenantUid}`}</p>
         </div>
       </HeaderDropdownPopup>
     )
+  }
+
+  const handleSwitchTenant = () => {
+    sessionStorage.setItem('returnURL', window.location.pathname + window.location.search)
   }
 
   return (
@@ -32,8 +36,12 @@ const TenantDropdown = () => {
       menu={{
         items: [
           {
-            key: 'tenantSettings',
-            label: <Link href="/">{t('tenantSettings')}</Link>
+            key: 'switch-tenant',
+            label: (
+              <Link href="/tenant" onClick={handleSwitchTenant}>
+                {t('header:switchTenant')}
+              </Link>
+            )
           }
         ]
       }}

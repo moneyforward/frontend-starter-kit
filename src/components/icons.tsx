@@ -3,13 +3,14 @@
 import Icon from '@ant-design/icons'
 import type { GetProps } from 'antd';
 
-import Announcement from '/public/icons/announcement.svg'
+import Announcement from '/public/icons/header/announcement.svg'
 import ChevronDown from '/public/icons/chevron-down.svg'
-import Grid from '/public/icons/grid.svg'
-import Help from '/public/icons/help.svg'
-import Notification from '/public/icons/notification.svg'
-import Copy from '/public/icons/copy.svg'
+import Grid from '/public/icons/header/grid.svg'
+import Help from '/public/icons/header/help.svg'
+import Notification from '/public/icons/header/notification.svg'
 import ChevronLeft from '/public/icons/chevron-left.svg'
+import Setting from '/public/icons/sider/setting.svg'
+import User from '/public/icons/sider/user.svg'
 
 type CustomIconComponentProps = GetProps<typeof Icon>;
 
@@ -33,10 +34,14 @@ export const NotificationIcon = (props: Partial<CustomIconComponentProps>) => {
   return <Icon component={Notification} {...props} />
 }
 
-export const CopyIcon = (props: Partial<CustomIconComponentProps>) => {
-  return <Icon component={Copy} {...props} />
-}
-
 export const ChevronLeftIcon = (props: Partial<CustomIconComponentProps>) => {
   return <Icon component={ChevronLeft} {...props} />
+}
+
+export const SettingIcon = (props: Partial<CustomIconComponentProps>) => {
+  return <Icon component={Setting} {...props} />
+}
+
+export const UserIcon = (props: Partial<CustomIconComponentProps>) => {
+  return <Icon component={User} {...props} />
 }

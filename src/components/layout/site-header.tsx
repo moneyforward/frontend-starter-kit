@@ -20,7 +20,7 @@ export function SiteHeader() {
           <GridIcon className="btn-icon" />
           <Divider className="logo-divider" type="vertical" />
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo-header.svg" width={200} height={20} alt="Logo" />
+            <Image src="/logo-header.svg" width={232} height={20} alt="Logo" />
           </Link>
         </div>
 

@@ -1,19 +1,17 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 interface IProps {
-    children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function Hydration(props: IProps) {
-    const [hydrated, setHydrated] = useState(false)
+  const [hydrated, setHydrated] = useState(false)
 
-    useEffect(() => {
-        setHydrated(true)
-    }, [])
+  useEffect(() => {
+    setHydrated(true)
+  }, [])
 
-    return (
-        hydrated ? props.children : null
-    )
+  return hydrated ? props.children : null
 }

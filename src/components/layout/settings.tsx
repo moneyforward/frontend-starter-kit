@@ -1,7 +1,7 @@
 import { ItemType } from 'antd/es/menu/hooks/useItems'
 import { useTranslation } from 'react-i18next'
 
-import { CopyIcon } from '../icons'
+import { SettingIcon, UserIcon } from '../icons'
 import { RouteConfig } from '@/helpers/routeConfig'
 
 // *** Base path ***
@@ -12,20 +12,12 @@ import { RouteConfig } from '@/helpers/routeConfig'
 
 export const routeConfigs: RouteConfig[] = [
   {
-    key: 'home',
-    path: '/home'
+    key: 'users',
+    path: '/users'
   },
   {
-    key: 'tenant',
-    path: '/tenant'
-  },
-  {
-    key: 'tenant-user',
-    path: '/tenant-user'
-  },
-  {
-    key: 'transfer-data',
-    path: '/transfer-data'
+    key: 'settings',
+    path: '/settings'
   }
 ]
 
@@ -37,18 +29,13 @@ const RenderLabel = ({ langKey }: { langKey: string }) => {
 
 export const navItems: ItemType[] = [
   {
-    key: 'tenant',
-    icon: <CopyIcon className="sider-icon" />,
-    label: <RenderLabel langKey="tenant" />
+    key: 'users',
+    icon: <UserIcon className="sider-icon" />,
+    label: <RenderLabel langKey="users" />
   },
   {
-    key: 'tenant-user',
-    icon: <CopyIcon className="sider-icon" />,
-    label: <RenderLabel langKey="tenantUser" />
-  },
-  {
-    key: 'transfer-data',
-    icon: <CopyIcon className="sider-icon" />,
-    label: <RenderLabel langKey="transferData" />
+    key: 'settings',
+    icon: <SettingIcon className="sider-icon" />,
+    label: <RenderLabel langKey="settings" />
   }
 ]

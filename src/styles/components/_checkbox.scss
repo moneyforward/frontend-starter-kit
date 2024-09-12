@@ -1,0 +1,21 @@
+.ant-checkbox {
+  &.ant-checkbox-checked {
+    .ant-checkbox-inner::after {
+      width: 7.7142857142857135px;
+      height: 11.142857142857142px;
+      inset-inline-start: 23%;
+      top: calc(50% - 0.5px);
+    }
+  }
+}
+
+.ant-table-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: $blue;
+  border-color: $blue;
+
+  &:after {
+    width: 10px;
+    height: 2px;
+    background-color: $white;
+  }
+}

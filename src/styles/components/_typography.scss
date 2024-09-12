@@ -1,0 +1,64 @@
+h1 {
+  font-size: $s-18;
+  line-height: $s-32;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $s-16;
+  line-height: $s-32;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $s-16;
+  line-height: $s-32;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: $s-14;
+  line-height: $s-16;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: $s-14;
+  line-height: $s-16;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: $s-13;
+  line-height: $s-32;
+  font-weight: 700;
+}
+
+p {
+  font-size: $s-13;
+  line-height: $s-24;
+  white-space: pre-line;
+
+  &.compact {
+    line-height: $s-16;
+  }
+}
+
+caption {
+  font-size: $s-12;
+  line-height: $s-16;
+}
+
+span {
+  font-size: $s-13;
+  line-height: $s-16;
+}
+
+.ant-typography {
+  color: $black;
+}
+
+a,
+a.ant-typography {
+  color: $blue;
+}

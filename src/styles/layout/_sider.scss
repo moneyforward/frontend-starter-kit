@@ -7,7 +7,7 @@
 
   .sider-icon {
     &.ant-menu-item-icon {
-      font-size: 20px !important;
+      font-size: $s-24 !important;
     }
   }
 
@@ -37,7 +37,6 @@
     }
 
     &-item {
-      font-size: 13px;
       color: $sider-text-color;
       border-bottom: 1px solid $sider-border-color;
       border-radius: 0 !important;
@@ -53,7 +52,7 @@
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     .anticon {
-      font-size: 14px;
+      font-size: $s-14;
     }
 
     &-text {
