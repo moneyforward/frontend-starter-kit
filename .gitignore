@@ -40,3 +40,5 @@ next-env.d.ts
 
 # sonarqube
 /sonarqube-report
+
+*storybook.log
