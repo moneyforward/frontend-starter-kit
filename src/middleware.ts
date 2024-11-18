@@ -52,19 +52,19 @@ const publicPaths = ['/user/login', '/logout']
 const lngPublicPaths = languages.flatMap(lng => publicPaths.map(path => `/${lng}${path}`))
 
 async function AuthMiddleware(req: NextRequest) {
-  // if (!lngPublicPaths.includes(req.nextUrl.pathname)) {
-  //   const session = await getSession()
-  //   if (!session.accessToken) {
-  //     return NextResponse.redirect(new URL(`/user/login?redirect=${req.nextUrl.pathname}`, req.url))
-  //   }
-  // }
+  if (!lngPublicPaths.includes(req.nextUrl.pathname)) {
+    const session = await getSession()
+    if (!session.accessToken) {
+      return NextResponse.redirect(new URL(`/user/login?redirect=${req.nextUrl.pathname}`, req.url))
+    }
+  }
 
-  // if (lngPublicPaths.includes(req.nextUrl.pathname)) {
-  //   const session = await getSession()
-  //   if (session.accessToken) {
-  //     return NextResponse.redirect(new URL(`/`, req.url))
-  //   }
-  // }
+  if (lngPublicPaths.includes(req.nextUrl.pathname)) {
+    const session = await getSession()
+    if (session.accessToken) {
+      return NextResponse.redirect(new URL(`/`, req.url))
+    }
+  }
 
-  return NextResponse.next()
+  return
 }
