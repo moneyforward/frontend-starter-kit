@@ -1,19 +1,17 @@
 import { ItemType } from 'antd/es/menu/hooks/useItems'
 import { useTranslation } from 'react-i18next'
 
-import { SettingIcon, UserIcon } from '../icons'
+import { PostIcon, SettingIcon, UserIcon } from '../icons'
 import { RouteConfig } from '@/helpers/routeConfig'
-
-// *** Base path ***
-// - If menu has only 1 section and has multiple routes, master section
-// will be implement by format: `[basePath].{pageName}`
-// - If menu has multiple children sections and each children section has multiple routes,
-// each children master section will be implement by format: `[basePath]/{sectionName}.{pageName}`
 
 export const routeConfigs: RouteConfig[] = [
   {
-    key: 'users',
-    path: '/users'
+    key: 'post',
+    path: '/post'
+  },
+  {
+    key: 'user',
+    path: '/user'
   },
   {
     key: 'settings',
@@ -29,9 +27,14 @@ const RenderLabel = ({ langKey }: { langKey: string }) => {
 
 export const navItems: ItemType[] = [
   {
-    key: 'users',
+    key: 'post',
+    icon: <PostIcon className="sider-icon" />,
+    label: <RenderLabel langKey="post" />
+  },
+  {
+    key: 'user',
     icon: <UserIcon className="sider-icon" />,
-    label: <RenderLabel langKey="users" />
+    label: <RenderLabel langKey="user" />
   },
   {
     key: 'settings',

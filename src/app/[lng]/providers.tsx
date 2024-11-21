@@ -35,16 +35,16 @@ export const AntdConfigProvider = ({ children }: React.PropsWithChildren) => {
       getPopupContainer={defaultGetPopupContainer}
       theme={{
         token: {
-          fontSize: 16,
+          // fontSize: 16,
           colorPrimary: '#3b7de9',
           colorInfo: '#3b7de9',
           colorError: '#ec4949',
           borderRadius: 4
         },
         components: {
-          Typography: {
-            fontSize: 13
-          },
+          // Typography: {
+          //   fontSize: 13
+          // },
           Button: {
             colorBorder: 'rgb(59, 125, 233)',
             colorText: 'rgb(59, 125, 233)',
@@ -81,6 +81,7 @@ export const AntdConfigProvider = ({ children }: React.PropsWithChildren) => {
             lineWidth: 2
           },
           Input: {
+            fontSize: 13,
             colorBgContainerDisabled: '#F1F1F1',
             colorTextDisabled: '#919191'
           }

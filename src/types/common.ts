@@ -1,4 +1,4 @@
-export interface paramProps {
+export interface ParamProps {
   lng: string
   id?: string
 }

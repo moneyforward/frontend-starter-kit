@@ -1,4 +1,5 @@
 import { DatePickerProps } from 'antd/es/date-picker'
+import { SelectProps } from 'antd/es/select'
 import { ChangeEvent } from 'react'
 import { ControllerProps } from 'react-hook-form'
 
@@ -36,4 +37,8 @@ export interface IInput extends BaseFormControl {
 export interface IInputNumber extends IInput {
   min?: number
   max?: number
+}
+
+export interface ITag extends IInput {
+  options?: SelectProps['options']
 }

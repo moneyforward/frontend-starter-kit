@@ -1,18 +1,21 @@
 import { useTranslation } from '@/i18n'
-import Link from 'next/link'
 
+import PostForm from '../post-form'
+import PageTitle from '@/components/layout/page-title'
 import { ParamProps } from '@/types/common'
 
 export default async function Page({ params: { lng } }: { params: ParamProps }) {
-  const { t } = await useTranslation(lng, ['common'])
+  const { t } = await useTranslation(lng, ['post'])
 
   return (
     <div className="flex flex-col gap-4 m-4">
       <div className="flex justify-between">
-        <h1 className="text-lg font-semibold my-auto">TRANSFER DATA PAGE</h1>
+        <PageTitle title={t('post:pageTitle.addPost')} lng={lng} />
       </div>
+
       <hr />
-      <Link href="/">{t('actions.back', { ns: 'common' })} to Home</Link>
+
+      <PostForm lng={lng} />
     </div>
   )
 }
